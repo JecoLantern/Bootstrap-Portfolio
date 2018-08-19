@@ -215,3 +215,103 @@ div.card.footer {
     padding: 0;
 }
 
+/* For Tablet, 641px < 768px < 979px */
+@media only screen and (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: row;
+    }
+    div.row.AboutMe, div.row.PortfolioMe, div.row.ThankYou {
+        margin: 12% 5% 0 7%;
+        width: 86%;
+    }
+    div.row.About, div.row.Portfolio, div.row.ThankYou2 {
+        margin: 21% 5% 3% 7%;
+        width: 86%;
+    }
+    img.Selfie {
+        width: 13.625rem;
+        height: 16.75rem;
+        margin: 0 0.9375rem 0 0;
+    }
+    div.media-body {
+        font-size: 0.92rem;
+    }
+    div.row.ContactMe {
+        margin: 12% 5% 0 7%;
+        width: 86%;
+    }
+    div.row.Contact {
+        width: 86%;
+        margin: 21% 5% 3% 7%;
+    }
+    div.row.ConnectWithMe {
+        display: none;
+    }
+}
+
+/* For Phone, 640px and less */
+@media only screen and (max-width: 640px) {
+    .navbar {
+        padding: 0rem 1.5rem 0rem 1.2rem;
+    }
+    .navbar-brand{
+        margin: auto;
+        padding: 1rem 6.5rem 1rem 6.5rem;
+    } 
+    .ml-auto {
+        margin: auto;
+    }
+    div.row.AboutMe, div.row.PortfolioMe, div.row.ThankYou {
+        margin: 24% 5% 0 7%;
+        width: 86%;
+    }
+    div.row.About, div.row.Portfolio, div.row.ThankYou2 {
+        margin: 35% 5% 3% 7%;
+        width: 86%;
+    }
+    img.Selfie {
+        width: 11.625rem;
+        height: 14.75rem;
+        margin: 0 0.9375rem 0 0;
+    }
+    div.media-body {
+        font-size: 0.76rem;
+    }
+    div.row.ContactMe {
+        margin: 24% 5% 0 7%;
+        width: 86%;
+    }
+    div.row.Contact {
+        width: 86%;
+        margin: 35% 5% 3% 7%;
+    }
+    div.row.ConnectWithMe {
+        display: none;
+    }
+}
+
+/* For Large Devices, 980px and up */
+@media screen and (min-width: 800px) and (max-width: 980px) {
+    .navbar-nav {
+        flex-direction: row;
+    }
+    div.row.AboutMe, div.row.PortfolioMe, div.row.ThankYou {
+        margin: 9% 5% 0 5%
+    }
+    div.row.About, div.row.Portfolio, div.row.ThankYou2 {
+        margin: 16% 5% 3% 5%;
+    }
+    div.row.ContactMe {
+        margin: 9% 5% 0 5%;
+        width: 65.7%;
+    }
+    div.row.Contact {
+        width: 65.7%;
+        margin: 16% 5% 3% 5%;
+    }
+    div.row.ConnectWithMe {
+        width: 23%;
+        top: 10.5%;
+        left: 71.9%;
+    }
+}
