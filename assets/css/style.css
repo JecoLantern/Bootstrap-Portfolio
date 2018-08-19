@@ -35,6 +35,10 @@ body {
     font-weight: bold;
 }
 
+.col-lg-2 {
+    border-left: 4px transparent;
+}
+
 /* About Me Page */
 img.Selfie {
     width: 250px;
@@ -43,22 +47,23 @@ img.Selfie {
     margin: 0 15px 0 0;
 }
 
-section.AboutMe, section.PortfolioPage, section.ThankYou {
-    width: 70%;
-    margin: 3% 15% 3% 15%;
-    float: left;
+div.row.About, div.row.Portfolio, div.row.ThankYou {
+    width: 90%;
+    margin: 9% 5% 3% 5%;
     border: #dddddd;
     background: #ffffff;
-    padding: 0 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
 }
 
 /* Headlines */
-.AboutMe, .ContactMe, .PortfolioPage, .ThankYou {
+div.row.AboutMe, div.row.PortfolioMe, div.row.ThankYou {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #4aaaa5;
     font-size: 24px;
     border-bottom: 3px solid #777777;
-    padding: 0 0 20px 0;
+    padding: 9px 0 20px 0;
+    margin: 5% 5% 0 5%;
+    width: 90%;
 }
 
 article.AboutMe2 {
@@ -70,6 +75,24 @@ article.AboutMe2 {
 }
 
 /* Contact Page */
+div.row.ContactMe {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #4aaaa5;
+    font-size: 24px;
+    border-bottom: 3px solid #777777;
+    padding: 9px 0 20px 0;
+    margin: 5% 5% 0 5%;
+    width: 75.7%;
+}
+div.row.Contact {
+    width: 75.7%;
+    margin: 9% 5% 3% 5%;
+    border: #dddddd;
+    background: #ffffff;
+    padding: 20px 20px 20px 20px;
+}
+
+
 section.left {
     float: left;
     width: 53%;
@@ -128,13 +151,21 @@ section.right {
     padding: 0 25px 20px 25px;
 }
 
-.ConnectWithMe {
+div.row.ConnectWithMe {
+    width: 13%;
+    top: 10.5%;
+    left: 81.9%;
+}
+
+h5.card-header.ConnectWithMe2 {
     color: #4aaaa5;
     font-size: 18px;
+    font-weight: bold;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    border-bottom: 1px solid #777777;
-    padding: 0 0 20px 0;
+    border-bottom: 3px solid #777777;
+    padding: 21px 0 20px 0;
+   
 }
 
 article.ConnectWithMeLinks {
@@ -142,22 +173,17 @@ article.ConnectWithMeLinks {
 }
 
 img.GitHubIcon {
-    width: 60px;
-    height: 60px;
-    padding-left: 10px;
+    width: 51px;
+    height: 51px;
 }
-
 img.LinkedInIcon {
     width: 60px;
     height: 60px;
-    margin: 0;
 }
-
 img.OverflowIcon {
-    width: 50px;
-    height: 50px;
-    margin: 0;
-    padding: 0 0 5px 0;
+    width: 60px;
+    height: 60px;
+    padding: 2.5px 0 2.5px 0;
 }
 
 /* Portfolio Page */
@@ -270,7 +296,7 @@ a.RockPaperScissors2 {
 }
 
 /* Footer for Everyone */
-.card {
+div.card.footer {
     text-align: center;
     background: #666666;
     color: #ffffff;
